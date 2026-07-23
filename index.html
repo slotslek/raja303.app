@@ -1,0 +1,484 @@
+
+
+
+<!doctype html>
+<html ⚡ lang="id-ID">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000d1a">
+  <link rel="shortcut icon" href="https://raja303slot.org/assets/images/icon-hk-gacor.webp">
+  <link rel="apple-touch-icon" href="https://raja303slot.org/assets/images/icon-hk-gacor.webp">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="preconnect" href="https://raja303slot.org/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>RAJA303 - Platform Game Modern dengan Navigasi Praktis RAJA303</title>
+  <meta name="description" content="RAJA303 Menyediakan pengalaman hiburan yang lebih nyaman dengan desain bersih dan akses yang mudah di semua perangkat.">
+  <meta name="language" content="id-ID">
+  <meta name="author" content="RAJA303"> 
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="RAJA303 - Platform Game Modern dengan Navigasi Praktis RAJA303">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="RAJA303 Menyediakan pengalaman hiburan yang lebih nyaman dengan desain bersih dan akses yang mudah di semua perangkat.">
+  <meta property="og:image" content="https://raja303slot.org/assets/images/banner.png">
+  <link rel="canonical" href="https://raja303slot.org/">
+  <meta property="og:url" content="https://raja303slot.org/">
+<style amp-boilerplate>
+  body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+  @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+  @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+  <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
+</noscript>
+
+<style amp-custom>
+
+    /* ── ROOT VARIABLES ── */
+    :root {
+      --gold:       #ffffff;
+      --gold-dim:   #FFFFFF;
+      --blue:       #FFFFFF;
+      --blue-dim:   #FFFFFF;
+      --dark:       #020B0F;
+      --dark-card:  #07161D;
+      --border:     rgba(255, 187, 0, 0.65);
+      --text:       #FFFFFF;
+      --text-dim:   #ffffff;
+      --teal-glow:  rgba(255, 187, 0, 0.65);
+    }
+  
+    /* ── RESET ── */
+    *, *::before, *::after { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+  
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background: var(--dark);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+  
+    /* ── HERO BACKGROUND ── */
+    .hero-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 60%),
+        linear-gradient(180deg, #021318 0%, #010607 100%);
+    }
+  
+    .hero-bg amp-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.18) saturate(1.2) hue-rotate(140deg);
+    }
+  
+    /* ── GRID SCANLINES ── */
+    .scanlines {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 3px,
+          rgba(0,255,200,0.03) 3px,
+          rgba(0,255,200,0.03) 4px
+        );
+      pointer-events: none;
+    }
+  
+    /* ── OVERLAY / CENTER ── */
+    .overlay {
+      position: relative;
+      z-index: 10;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 16px;
+    }
+  
+    /* ── CARD ── */
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,255,200,0.06),
+          rgba(0,0,0,0.95)
+        );
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow:
+        0 0 25px rgba(255, 187, 0, 0.65),
+        0 0 60px rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(4px);
+    }
+  
+    /* ── TOPBAR ── */
+    .topbar {
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        linear-gradient(
+          90deg,
+          #03191d,
+          #062a30,
+          #03191d
+        );
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+  
+    .topbar img {
+      height: 50px;
+      position: relative;
+      z-index: 1;
+      filter:
+        drop-shadow(0 0 5px #000000)
+        drop-shadow(0 0 15px rgba(255, 187, 0, 0.65));
+    }
+  
+    .banner {
+      position: relative;
+      overflow: hidden;
+      border-top: 4px double #ffae00;
+      border-bottom: 4px double #ffae00;
+    }
+  
+    .banner img {
+      width: 100%;
+      display: block;
+    }
+  
+    /* ── TITLEBAR ── */
+    .titlebar {
+      padding: 11px 16px;
+      text-align: center;
+      font-family: 'Orbitron', monospace;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+      text-transform: uppercase;
+      background:
+        linear-gradient(
+          90deg,
+          #021317,
+          #06343a,
+          #021317
+        );
+      border-bottom: 1px solid var(--border);
+      text-shadow:
+        0 0 10px rgba(255, 187, 0, 0.65),
+        0 0 25px rgba(255, 187, 0, 0.65);
+    }
+
+    .content {
+      padding: 16px;
+      background:
+        linear-gradient(
+          180deg,
+          #03161b 0%,
+          #021014 45%,
+          #000000 100%
+        );
+    }
+  
+    .btns {
+      display: flex;
+      gap: 7px;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .btn {
+      flex: 1;
+      height: 46px;
+      line-height: 44px;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Orbitron', monospace;
+      font-weight: 800;
+      border-radius: 8px;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.25s ease;
+    }
+  
+    .btn-daftar {
+      background:
+        linear-gradient(
+          135deg,
+          #ffae00 0%,
+          #ffae00 50%,
+          #ffae00 100%
+        );
+      color: #001b1b;
+      border: 2px solid #ffae00;
+      cursor: pointer;
+      animation: glowPulse 1.5s infinite ease-in-out;
+      transition: transform 0.2s;
+      text-shadow: 0 1px 2px rgba(255,255,255,0.3);
+    }
+
+    /* efek hover tambahan */
+    .btn-daftar:hover {
+      transform: scale(1.08);
+    }
+
+    /* animasi glow + pulse */
+    @keyframes glowPulse {
+      0% {
+        box-shadow:
+          0 0 5px rgba(255, 187, 0, 0.65),
+          0 0 12px rgba(255, 187, 0, 0.65);
+        transform: scale(1);
+      }
+      50% {
+        box-shadow:
+          0 0 20px rgba(255, 187, 0, 0.65),
+          0 0 45px rgba(255, 187, 0, 0.65);
+        transform: scale(1.05);
+      }
+      100% {
+        box-shadow:
+          0 0 5px rgba(255, 187, 0, 0.65),
+          0 0 12px rgba(255, 187, 0, 0.65);
+        transform: scale(1);
+      }
+    }
+
+    .btn-login {
+      background: #03161b;
+      border: 2px solid #ffae00;
+      color: #ffae00;
+      box-shadow: 0 0 12px rgba(255, 187, 0, 0.65);
+    }
+  
+    .info {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,255,200,0.04),
+          rgba(0,0,0,0.95)
+        );
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+  
+    .row {
+      display: flex;
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(0,255,200,0.12);
+    }
+  
+    .row:last-child {
+      border-bottom: none;
+    }
+  
+    .label {
+      width: 45%;
+      color: var(--gold-dim);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+  
+    .value {
+      width: 55%;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+    }
+  
+    /* ── STATS BADGES ── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+  
+    .stat-badge {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(0,255,200,0.06),
+          rgba(0,0,0,0.95)
+        );
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .stat-label {
+      font-family: 'Orbitron', monospace;
+      font-size: 9px;
+      color: var(--text-dim);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  
+    .stat-value {
+      font-family: 'Orbitron', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(255, 187, 0, 0.65);
+    }
+  
+    /* ── FOOTER ── */
+    .footer {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-dim);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: 'Orbitron', monospace;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 187, 0, 0.65);
+    }
+  
+    .footer span {
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(255, 187, 0, 0.65);
+    }
+
+    .copyright a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+</style>
+</head>
+
+<body>
+
+  <!-- Background image -->
+  <div class="hero-bg">
+    <amp-img
+      src="https://raja303slot.org/assets/images/banner.png"
+      layout="fill"
+      object-fit="cover"
+      alt="RAJA303 Background">
+    </amp-img>
+  </div>
+
+  <!-- Scanlines texture -->
+  <div class="scanlines"></div>
+
+  <!-- Main overlay -->
+  <div class="overlay">
+    <div class="card">
+
+      <!-- Top logo bar -->
+      <div class="topbar">
+        <img src="https://raja303slot.org/assets/images/RAJA303.webp" alt="RAJA303 LOGO">
+      </div>
+
+      <!-- Banner image -->
+      <div class="banner">
+        <img src="https://raja303slot.org/assets/images/banner.png" alt="RAJA303">
+      </div>
+
+      <!-- Title bar -->
+      <div class="titlebar">
+        RAJA303 - Platform Game Modern dengan Navigasi Praktis RAJA303
+      </div>
+        <div class="btns">
+          <a href="https://hk138c.link/register" class="btn btn-daftar">KLIK DAFTAR</a>
+          <a href="https://hk138c.link" class="btn btn-login">KLIK LOGIN</a>
+          <a href="https://hk138c.link" class="btn btn-login">LINK ALTERNATIF</a>
+        </div>
+      <!-- Content -->
+      <div class="content">
+
+        <!-- Stats badges like reference image -->
+        <div class="stats-grid">
+          <div class="stat-badge">
+            <span class="stat-label">RATING</span>
+            <span class="stat-value">⚓⚓⚓⚓⚓</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-label">DEPO</span>
+            <span class="stat-value">25 RIBU</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-label">WIN RATE</span>
+            <span class="stat-value">98,99%</span>
+          </div>
+          <div class="stat-badge">
+            <span class="stat-label">WEDE</span>
+            <span class="stat-value">50 RIBU</span>
+          </div>
+        </div>
+
+        <div class="cyber-line"></div>
+
+
+
+        <!-- Info table -->
+        <div class="info">
+          <div class="row">
+            <div class="label">Nama Situs</div>
+            <div class="value">RAJA303</div>
+          </div>
+          <div class="row">
+            <div class="label">Min Betting</div>
+            <div class="value">Rp 400</div>
+          </div>
+          <div class="row">
+            <div class="label">Bonus</div>
+            <div class="value">SPIN MURNI 20%</div>
+          </div>
+          <div class="row">
+            <div class="label">Deposit</div>
+            <div class="value">QRIS, EWALLET, BANK</div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+           <p class="copyright">
+         <strong>&copy; <a href="https://raja303slot.org/">RAJA303</a> 2026 - PAKLEK</strong>
+            </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
